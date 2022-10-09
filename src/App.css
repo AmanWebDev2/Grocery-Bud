@@ -1,38 +1,114 @@
-.App {
+body{
+  font-family: sans-serif;
+  background-color: #7D6E83;
+}
+
+section {
+  /* border: 1px solid red; */
+  width: 500px;
+  margin: 7rem auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 3rem;
+  border-radius: 6px;
+  background-color: #F8EDE3
+
+}
+
+.grocery-container{
+  margin-top: 2rem;
+}
+
+.grocery-form h3{
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 1.6rem;
+
+}
+.form-control{
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+
+.grorcery{
+  flex: 1;
+  padding: .5rem 1rem;
+  outline: none;
+  border: none;
+  background-color: rgb(230, 236, 234);
+}
+
+.submit-btn{
+  border: none;
+  padding: .5rem 1rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: 600;
+  background-color: brown;
+  color: rgb(230, 227, 222);
+}
+
+
+article{
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  /* margin: 1.4rem auto; */
+}
+
+.title{
+  flex: 1;
+}
+.clear-btn{
+  border: none;
+  outline: none;
+  padding: .5rem 1rem;
+  display: block;
+  margin: 0 auto;
+  margin-top: 3rem;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  border-radius: 4px;
+  color: crimson;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.alert {
+  border: 2px solid black;
+  border-radius: 7px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.alert-success {
+  border: 2px solid green;
+  color: green;
+  background-color: lightgreen;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.alert-danger {
+  border: 2px solid crimson;
+  color: crimson;
+  background-color: rgb(249, 225, 230);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-edit{
+  margin-right: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-edit:hover{
+  color: teal;
+  transition: all .3s;
+}
+
+.btn-delete:hover{
+  color: crimson;
+  transition: all .3s;
 }
